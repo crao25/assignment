@@ -7,7 +7,7 @@ args <- commandArgs(trailingOnly = TRUE)
 ## read binary file from stdin
 con <- file("stdin", "rb") ## establish connection to standard input
 data <- readBin(con, what= raw(), n= 10)## read standard input
-data <- readBin(file("trivialinput.bin", "rb"), raw(), n=10)
+#data <- readBin(file("trivialinput.bin", "rb"), raw(), n=10)
 
 ## manipulate hexadecimal to numeric 
 numdata <- as.numeric(data)
