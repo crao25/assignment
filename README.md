@@ -13,5 +13,11 @@ Run the following command to run the script "script.sh" in the command line:
 
 This will run the R script assignment.R, take the standard input from input.bin, print the output on the standard output (command line screen) and redirect the errors to error_warnings.txt file.
 
-make_binary.R script was used to generate a sample binary file which is used as the standard input in this assignment. 
+For the trivial implementation run the following command in the command line:
+
+> bash trivial_script.sh
+
+This will run the R script assignment_trivial.R, take the standard input from trivialinput.bin, print the output on the standard output (command line screen) and redirect the errors to error_warnings.txt file.
+
+make_binary.R script was used to generate a sample binary files which are used as the standard input in this assignment. 
 
