@@ -19,13 +19,14 @@ qi <- numdata[c(FALSE, TRUE)] ## even
 for (i in 1:length(pi)) {
   ## put a condition that if pi is 0 -> take qi element
   if (pi[i]==0) {
-    newdata[i] = qi[i]
+    newdata[i]  <- qi[i]
     
   }
   ## put a condition that if pi > 0 -> 
   ## go back pi elements and take first qi elements
   else if (pi[i]>0) {
-    newdata[i]=newdata[c(pi[tail(pi,pi[i])][1]:qi[i])]
+    newdata[i] <- newdata[c(pi[tail(pi,pi[i])][1]:qi[i])]
+    i=i+qi[i] ## increase i by the value at qi[i] so that it populates the output at the right position
   }
 }
 ## convert new numeric data back to hexadecimal
